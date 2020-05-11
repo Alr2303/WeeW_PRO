@@ -15,6 +15,91 @@
   <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <style>
+    .border-green{
+      border:2px solid green;
+      color:green;
+      padding:15px;
+    }
+    .cardsforblog{
+      height:450px;
+    }
+    .inp{
+      width:30%;
+      border-radius:25px;
+      border:none;
+      /*border:1px solid black;*/
+      padding-left:10px;
+
+    }
+    .inp::focus{
+      highlight:none;
+    }
+    .active{
+      color:green;
+    }
+    .active::before{
+      content:'';
+    }
+    .image__messenger img{
+      height:30px;
+      width:30px;
+    border-radius:50%;
+          }
+          .image__messenger p{
+            width:100%;
+            border-bottom:1px solid grey;
+          }
+          .inactive{
+            color:red;
+          }
+          .circ{
+            border-bottom:1px solid grey;
+          }
+          .comp::before{
+              content: '';
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 46px;
+    border-radius: 50%;
+    background-color: green;
+    left: 6%;
+          }
+          .prog::before ,
+          .overdue::before ,
+          .notstarted::before{
+                          content: '';
+    height: 5px;
+    width: 5px;
+    position: absolute;
+ /*   top: 46px;*/
+    border-radius: 50%;
+    left: 6%;
+    margin-top: 8px;
+          }
+          .prog::before{
+            background:yellow;
+          }
+          .overdue::before{
+            background:red;
+          }
+          .notstarted::before{
+            background:grey;
+          }
+          @media (max-width: 600px){
+       .prog::before ,
+       .notstarted::before,
+       .comp::before,
+       .overdue::before
+       {display: none;
+        left:65%;
+          }
+       }
+       @media (max-width: 330px){
+        .vis h5{
+          font-size:12px;
+        }
+       }
   </style>
 </head>
 <body>
@@ -36,45 +121,19 @@
     </div>
 
     <!-- search bar -->
-     <div class="container">
-    <div class="row">
-    <div class="col-md-7 col-sm-12">
+     <div class="container bg-light p-3">
+      <div class="container text-left">
+          
     <h3>Choose Subject</h3>
     <div class="input-group">
-  <input type="text" placeholder="search" className="inp" />
+  <input type="text" placeholder="search" class="inp" />
   <Search class="img d-none d-md-block"/></div>
   </div>
-  <div class="col-md-5 p-3">
-           <div class="card text-white border-0">
-    <img class="card-img img-fluid" src="./images/diy/diyone.png" alt="background video" />
-    <div class="card-img-overlay">
-   <h3>Easy steps to build IOT App</h3>
-    </div>
-  </div>
-         <div class="card text-white border-0">
-    <img class="card-img img-fluid" src="./images/diy/diyone.png" alt="background video" />
-    <div class="card-img-overlay">
-   <h3>Easy steps to build IOT App</h3>
-    </div>
-  </div>
-         <div class="card text-white border-0">
-    <img class="card-img img-fluid" src="./images/diy/diyone.png" alt="background video" />
-    <div class="card-img-overlay">
-   <h3>Easy steps to build IOT App</h3>
-    </div>
-  </div>
-         <div class="card text-white border-0">
-    <img class="card-img img-fluid" src="./images/diy/diyone.png" alt="background video" />
-    <div class="card-img-overlay">
-   <h3>Easy steps to build IOT App</h3>
-    </div>
-  </div>
-  </div>
-
-
-
-
-  <div class="container">
+   
+    <div class="row">
+      <!-- cards section -->
+      <div class="col-md-7 col-sm-12">
+         <div class="container cardsforblog">
     <CardsForBlog />
   </div>
 <div class="my-md-5">
@@ -82,11 +141,234 @@
 <div class="container">
   <div class="row border-green bloggreen">
   <div class="col ">
-  86/10
+  86/100
   </div>
   <div class="col text-right">Passed</div>
   </div>
 </div></div>
+
+  <!-- visible cards only on mobile -->
+<div class="container d-block d-md-none vis">
+  <h4>Actions</h4>
+  <div class="row mt-2">
+ <div class="col-6 card text-white border-0 p-1">
+    <img class="card-img img-fluid" src="./images/blogone.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h5>View Points</h5>
+    </div>
+  </div>
+         <div class="col-6 card text-white border-0 p-1">
+    <img class="card-img img-fluid" src="./images/blogfour.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h5>Ask Questions</h5>
+    </div>
+  </div>
+         <div class="col-6 card text-white border-0 p-1 ">
+    <img class="card-img img-fluid" src="./images/blogtwo.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h5>Video Lesson's</h5>
+    </div>
+  </div>
+       <div class="col-6 card text-white border-0 p-1">
+    <img class="card-img img-fluid" src="./images/blogthree.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h5>Tools</h5>
+    </div>
+  </div>
+</div></div>
+
+
+<!-- Strategies section -->
+
+<div class="container">
+  <h4>Strategies for Effective Learning</h4>
+   <div class="container py-md-2">
+  <ul class="nav justify-content-md-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#Fundamentals">Message enrollment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-muted" href="#Advanced">12 Lessons</a>
+  </li>
+</ul>
+    </div>
+
+
+    <!-- div with the cirular image -->
+    <div class="container circ py-2">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+         <p>circular image here</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h4>Courses status</h4>
+          <div class="d-flex flex-row flex-md-column">
+             <p class="text-muted ml-md-3 flex-grow-1 comp"><span class="compl"></span>52 completed</p>
+           <p class="text-muted ml-md-3 prog">20 in progress</p>
+          </div>
+             <div class="d-flex  flex-row flex-md-column">
+            <p class="text-muted ml-md-3 flex-grow-1 overdue">2 overdue</p>
+             <p class="text-muted ml-md-3 notstarted">4 not started</p></div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-1">
+      <div class="row">
+        <div class="col">
+          <h3 class="display-4 text-center">138</h3>
+          <p class="text-muted text-center">Lessons completed</p>
+        </div>
+        <div class="col">
+           <h3 class="display-4 text-center">8.7</h3>
+              <p class="text-muted text-center">Hours spent Learning</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- end of col 7 here -->
+    </div>
+
+      <!--left bar
+       actions with cards section  
+    left side bar container
+      -->
+  <div class="col-md-5 py-0 d-none d-md-block">
+    <h3>Actions</h3>
+           <div class="card text-white border-0 ">
+  
+                  <img class="card-img img-fluid" src="./images/blogone.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h3>View Points</h3>
+    
+
+    </div>
+  </div>
+         <div class="card text-white border-0 ">
+    <img class="card-img img-fluid" src="./images/blogfour.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h3>Ask Questions</h3>
+    </div>
+  </div>
+         <div class="card text-white border-0 ">
+    <img class="card-img img-fluid" src="./images/blogtwo.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h3>Video Lesson's</h3>
+    </div>
+  </div>
+       <div class="card text-white border-0 ">
+    <img class="card-img img-fluid" src="./images/blogthree.png" alt="background video" />
+    <div class="card-img-overlay">
+   <h3>Tools</h3>
+    </div>
+  </div>
+  <!--container for messenger -->
+  <div class="container border rounded py-3 mt-2">
+    <h3>Messenger</h3>
+    <div class="d-flex flex-row">
+      <p class="flex-grow-1 text=left">Classroom</p>
+      <p class="text-right">Status</p>
+    </div>
+    <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengerone.png" alt="">
+        <p class="lead  px-1">Julia</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+        <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengerthree.png" alt="">
+        <p class="lead  px-1">Justin</p>
+        </div>
+      </div>
+      <div>
+        <p class="inactive">Offline</p>
+      </div>
+    </div>
+        <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengerfour.png" alt="">
+        <p class="lead  px-1">Paul</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+        <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengerfive.png" alt="">
+        <p class="lead  px-1">Camrey</p>
+        </div>
+      </div>
+      <div>
+        <p class="inactive">Offline</p>
+      </div>
+    </div>
+        <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengersix.png" alt="">
+        <p class="lead  px-1">Michael</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+            <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengersix.png" alt="">
+        <p class="lead  px-1">Michael</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+            <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengersix.png" alt="">
+        <p class="lead  px-1">Michael</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+            <div class="d-flex px-2">
+      <div class="flex-grow-1 ">
+        <div class="d-flex flex-row image__messenger">
+          <img src="./images/messengersix.png" alt="">
+        <p class="lead  px-1">Michael</p>
+        </div>
+      </div>
+      <div>
+        <p class="active">Active</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+ 
 </main>
 
 
