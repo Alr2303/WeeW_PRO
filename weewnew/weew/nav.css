@@ -1,0 +1,46 @@
+ .modal-body{
+      padding:0;
+    }
+.imi{
+  padding:0;}
+  .green__button__modal{
+  background:#608A24;
+  color:white;
+  text-align: center;
+  border-radius:25px;
+  width:200px;
+  border:none;
+  height:50px;
+}
+.white__button__modal{
+  background:white;
+  color:#608A24;
+  border:1px solid #608A24;
+  text-align: center;
+  border-radius:25px;
+  width:200px;
+  border:none;
+  height:50px;
+}
+.input__curved__modal{
+  border-radius:20px;
+  color:grey;
+  margin:10px;
+  width:280px;
+  margin:0 auto;
+  border:1px solid #608A24;
+}
+.menu__button{
+    background:#608A24;
+  color:white;
+  text-align: center;
+  border-radius:25px;
+  width:100px;
+  border:none;
+  height:40px;
+  margin-top:-20px;
+  }
+  li>a>p{
+    color:#608A24;
+
+  }

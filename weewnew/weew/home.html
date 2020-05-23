@@ -1,0 +1,1092 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio - Moderna Bootstrap Template</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ 
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./nav.css">
+<!--   <link href="//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display" rel="stylesheet" type="text/css"/> -->
+<link rel="stylesheet" href="./css/textcarousel.css">
+  <link rel="stylesheet" href="./glider.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="./cardcarousel.css">
+  <style>
+ .carousel-indicators li{
+ 	height:10px;
+ 	width:10px;
+ 	border-radius:50%;
+ 	border:1px solid white;
+
+ }
+.top__text{
+position:absolute;
+top:30%;
+left:10%;
+width:50vw;
+color:white;	
+}
+.top__text p{
+
+	text-align: justify;
+	}
+.top__text h3{
+	line-height:40px;
+	font-size:2rem;
+}
+/*styles for text over image*/
+
+.input__responsive__group{
+	width:45vw;
+	display:flex;
+	flex-direction: row;
+	margin-top:25px;
+}
+.input__responsive__input{
+	border-radius:30px;
+	border:none;
+	opacity:0.7;
+	background:grey;
+	width:60%;
+	height:48px;
+	color:white;
+	outline:none;
+}
+
+input::placeholder{
+	color:white;
+}
+.input__responsive__btn{
+	margin-left:-60px;
+	border-radius:30px;
+	padding:10px;
+	background:white;
+	color:#608A24;
+	position:relative;
+	border:none;
+	height: 48px;
+    width: 182px;
+}
+.green__button{
+    height: 48px;
+    width: 182px;
+  border-radius:30px;
+  padding:10px;
+  background:#608A24;
+  color:white;
+  position:relative;
+  border:none;
+  text-align: center;
+
+}
+.home__responsive__textbox{
+	margin-top:-120px;
+	text-align:left;
+}
+
+ol.carousel-indicators li{
+	height:20px;
+	width:20px;
+	border-radius:50%;
+}
+.cards{
+  height:55px;
+  width:55px;}
+  .cc{
+    background:white;
+    color:green;
+  }
+
+.mid{
+  background:green;
+  color:white;
+}
+.video{
+  background-image:url('./images/video.png');
+  background-position: center;
+  background-size: cover;
+  height:300px;
+}
+.uni{
+      background-image:url('./images/blog.png');
+  background-position: center;
+  background-size: cover;
+height:300px;
+
+  }
+  
+.video>.card,
+.uni>.card{
+  background:none;
+  text-align: left;
+  color:white;
+  padding:10px;
+  border:none;
+}
+
+.courses{
+  width:100vw;
+  margin:0 auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+.up{
+  border-bottom:4px solid white;
+  width:40%;
+}
+.ftr{
+  background:url(./images/footerbackground.png);
+  background-size: cover;
+  background-position: center;
+}
+.first{
+  background: url('./images/a.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.second{
+ background: url('./images/b.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.third{
+   background: url('./images/c.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.carousel-item{
+  height:inherit;
+  width:inherit;
+}
+
+.cards__for__faq{
+  height:335px;
+}
+.carousel-inner{
+  height:80vh;
+}
+/* media queries */
+/* min 768 and max 1023 px*/
+
+@media screen and (min-width: 760px) and (max-width:1300px){
+  .top__text{
+    top:11%;
+  }
+}
+/*for devices less than 765 i.e mobile phones */ 
+@media screen and (max-width: 765px){
+  .scroll__on__mobile{
+    display: flex;
+    height: 338px;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    margin-left:-110px;
+  }
+
+  .scroll__on__mobile__card{display:inline-block;}
+  .scroll__on__mobile::-webkit-scrollbar{display:none;}
+
+}
+
+/*android devices */
+@media (max-width: 600px){
+  .scroll__on__mobile{
+    margin-left:-40px;
+  }
+  .ftr{
+    background:none;
+  }
+  .card{
+    width:260px;
+    height:inherit;
+  }
+  .scroll__on__mobile{
+    height:260px;
+  }
+  .carousel-inner{
+    height:92vh;
+  }
+  .top__text{
+    width:80vw;
+    top:30%;
+  }
+  .top__text>h1{font-size:2rem;}
+  .top__text p{
+    font-size:12px;
+    text-align: left;
+  }
+  .input__responsive__group{
+    width:100vw;
+    flex-direction: column;
+  }
+  .input__responsive__btn{
+    margin-left:0;
+    margin-top:10px;
+  }
+  .courses{
+    padding-left: 0;
+    margin-left:-20px;
+  }
+  .up{
+    width:45%;
+  }
+
+}
+@media(max-width: 330px){
+  .blogcard{
+    padding:2px;
+    width:216px;
+    height: auto;
+  }
+  .lower{
+    width:218px;
+  }
+  .glider-slide{
+        height: auto;
+    width: 226px;
+  }
+  .blogtext{
+    margin-left:-10px;
+  }
+  .p__text__carousel{
+    width:246px;
+  }
+}
+.signinimage{
+  height:20px;
+  width:20px;
+}
+.member__button{
+    height:50px;
+  width:30%;
+  background:#709639;
+  border:1px solid white;
+  color:white;
+padding:10px;
+border-radius:5px;
+}
+.signin__button{
+    height:50px;
+  width:100%;
+  margin:0 auto;
+  background:#709639;
+  border:1px solid white;
+  color:white;
+padding:10px;
+border-radius:2px;
+}
+.signin__button img{
+  color:white;
+}
+/*iphone se only */
+/*@media (max-width: 330px){
+  .card__for__home{
+    width:15rem;
+  }
+}*/
+/* min 1024 and max 1919 px*/
+/*from laptop screen upto desktop screen */
+
+/*@media screen and (min-width:1320)and(max-width: 1919px){
+.top__text{
+  top:15%;
+}
+}
+
+@media (max-width: 340px){
+  .input__responsive__group{
+    flex-direction:column;
+  }
+  .input__responsive__group{
+  width:70vw;
+}
+.input__responsive__input{
+  width:80%;
+  height:40px;
+}
+.input__responsive__btn{
+  margin-left:0;
+  width:65%;
+  font-size:15px;
+  margin-top:10px;
+  height:40px;
+}
+.home__responsive__textbox{
+  margin-top:-20%;
+  text-align:left;
+  margin-left:10px;
+}
+.home__responsive__textbox p{font-size:12px;}
+}
+
+
+@media (max-width:580px) and (min-width: 350px){
+  .input__responsive__group{
+    flex-direction:column;
+  }
+  .input__responsive__group{
+  width:70vw;
+}
+.input__responsive__input{
+  width:80%;
+  height:40px;
+}
+.input__responsive__btn{
+  margin-left:5%;
+  width:60%;
+  font-size:15px;
+  margin-top:10px;
+  height:40px;
+}
+.home__responsive__textbox{
+  margin-top:-20%;
+  text-align:left;
+  margin-left:10px;
+}
+.home__responsive__textbox p{font-size:12px;}
+}
+@media screen and (max-width: 600px){
+  .top__text{
+    top:23%;
+    width:90vw;
+    left:6%;
+  }
+  .up{
+    width:50vw;}
+    .top__text h1{
+      font-size:20px;
+      width:100vw;
+  }
+  .uni{
+    height:340px;
+  }
+  .top__text p{
+    font-size:12px;
+  }
+  .input__responsive__group{
+        text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+  }
+  .first{
+  background: url('./images/weew__home__mobile.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.second{
+ background: url('./images/b.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.third{
+   background: url('./images/c.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}}*/
+@media (max-width: 900px){
+  .navbar{
+    z-index: 99;
+  }
+}
+
+.glider-prev,
+.glider-next{
+      border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  background:#608A24;
+  color:white;
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <!--navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand d-block d-md-none" href="#"><img src="./images/logo.png" style="height:70px;width:120px" alt="" /> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav w-100 justify-content-center">
+      <li class="nav-item active d-none d-md-block">
+        <a href="./home.html"><img src="./images/logo.png" style="height:60px;width:110px ;margin-top:4px" alt="" /> </a>    
+      </li>
+      <li class="nav-item d-flex d-block d-md-none">
+        <img src="./images/aboutusfive.png" alt="" style="height:90px;width:120px;border-radius:5%" class="px-3 mx-2">
+        <div class="text px-5">
+          <p>Name</p>
+          <button class="menu__button">Login</button>
+        </div>
+      </li>
+      <li class="nav-item d-block d-md-none py-3 mx-4"><h4>Take Me To</h4></li>
+      <li class="nav-item py-md-2">
+        <a class="nav-link " href="./home.html"><img src="./images/iconHome.png"  class="d-none d-md-block"alt="" style="height:22px;width:22px;"> <p class="d-block d-md-none">Home</p><span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item py-md-2">
+        <a class="nav-link" href="./Aboutus.html" ><p>About Us</p></a>
+      </li>
+      <li class="nav-item py-md-2">
+        <a class="nav-link" href="./services.html"><p>Services</p></a>
+      </li>
+         <li class="nav-item py-md-2">
+        <a class="nav-link" href="./news.html"><p>News</p></a>
+      </li>
+          <li class="nav-item py-md-2">
+        <a class="nav-link" href="./diyportal.html"><p>DIY Portal</p></a>
+      </li>
+          <li class="nav-item py-md-2">
+        <a class="nav-link" href="./education.html"><p>Education</p></a>
+      </li>
+      <li class="nav-item py-md-2">
+       <a class="nav-link" href="./blog.html"><p>Blogs</p></a>
+      </li>
+           <li class="nav-item py-md-2">
+       <a class="nav-link" href="./faq.html"><p>FAQ'S</p></a>
+      </li>
+           <li class="nav-item py-md-2">
+       <a class="nav-link" href="./contactus.html"><p>Contact Us</p></a>
+      </li>
+           <li class="nav-item py-md-2 d-none d-md-block">
+       <a class="nav-link" href="#"><button class="menu__button">Login</button></a>
+      </li>
+      <li class="nav-item d-flex d-block d-md-none">
+        <img src="" alt="" class="mt-5" style="height:120px; width:120px; border-radius:50%;background:black; ">
+        <div class="px-2">
+          <p>Performance</p>
+          <small>76%</small>
+          <p>Task Completed</p>
+          <small>5</small>
+          <p>Score</p>
+          <small>751</small>
+                  </div>
+      </li>
+    </ul>
+
+  </div>
+
+
+</div>
+  </div></div></div>
+</nav>
+
+
+  <!--close navigation bar -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img alt="" class="first">
+    </div>
+    <div class="carousel-item">
+     <div class="second"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="third"></div>
+    </div>
+  </div>
+
+</div>
+<div class="container text-left top__text">
+	<h1>Welcome to WeeW Foundation!</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum quos, officiis unde nobis <br>  maiores perferendis ut soluta praesentium reiciendis? Perferendis amet accusamus, <br>aliquid? Quia reprehenderit nobis laborum nam accusamus.</p>
+	 <div class="input-group group input__responsive__group">
+     <input type="email" placeholder="enter your email" name="email"  class="px-4 border-3 flex-grow home-input input__responsive__input"/>
+     <button class="btn input__responsive__btn" id="btnsignup">Start your free trail</button>
+     </div>
+</div>
+
+<!-- centered cards -->
+ <div class="container-fluid text-center ">
+    <div class="container mt-4 px-md-1">
+      <h3>New Opportunities</h3>
+      <p>we are the first and the only crowdfunding platform enabling you <br />to help students finance</p>
+      <div class="row px-lg-5 scroll__on__mobile">
+        <div class="col col-md-4 scroll__on__mobile__card">
+       <div class="px-lg-3">
+        <div class="card">
+          <div class="card-body">
+                   <img src='./images/homesectionB.png' alt="something" class=" cards text-align-center d-flex justify-content-start mx-lg-3 mt-lg-3"/>
+              <div class="card-text mt-3">
+         
+             Out team of professionals staff will 
+     view through your progress and goes by for your clarification and doubts as well
+          </div>
+          </div>
+        
+        </div>
+  </div>
+</div>
+    
+   <div class="col col-md-4 scroll__on__mobile__card">
+       <div class="px-lg-3">
+        <div class="card mid">
+          <div class="card-body">
+                  <img src='./images/homesectionA.png' alt="something" class=" cards text-align-center d-flex justify-content-start mx-lg-3 mt-lg-3"/>
+              <div class="card-text mt-3">
+          
+             Out team of professionals staff will 
+     view through your progress and goes by for your clarification and doubts as well
+          </div>
+          </div>
+        
+        </div>
+  </div>
+</div>
+     <div class="col col-md-4 scroll__on__mobile__card">
+       <div class="px-lg-3">
+        <div class="card">
+          <div class="card-body">
+                          <img src='./images/homesectionC.png' alt="something" class=" cards text-align-center d-flex justify-content-start mx-lg-3 mt-lg-3"/>
+              <div class="card-text mt-3">
+  
+             Out team of professionals staff will 
+     view through your progress and goes by for your clarification and doubts as well
+          </div>
+          </div>
+        
+        </div>
+  </div>
+</div>
+        </div></div>
+
+        <!-- courses card container -->
+        <div class="container mt-4 py-3">
+          <h3>Courses Available</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt molestias fugiat id cupiditate eos odit enim omnis. Totam, culpa nobis! Voluptatem quae consequuntur error velit facere, sit optio molestiae!</p>
+          <div class="container courses">
+            <div class="row justify-content-center">
+              <div class="col-11 col-md-4 video mx-2">
+                <div class="card">
+                 <div class="">
+                   <p class="up">Video Lessons</p>
+                   <div class="mt-sm-5">
+                <h4>Class 2-10</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto debitis minus eos temporibus nam, dolore</p>
+                <button class="green__button">Enter Classroom</button>          </div>
+                 </div> 
+                </div>
+                
+              </div>
+              <div class="col-11 col-md-4 uni">
+                 <div class="card">
+                 <div class="">
+                   <p class="up">CLASS</p>
+                <h4>University Books And tools for dev.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto debitis minus eos temporibus nam, dolore</p>
+                <button class="green__button">View Blog</button>
+                 </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="section-bg bg-light py-md-4">
+      <div class="container mx-auto px-md-3">
+        <div class="row mx-auto">
+          <div class="col-12 col-md-7  d-flex justify-content-end ">
+            <img src="./images/mask.png" alt="" class="img-fluid edu__images">
+          </div>
+          <div class="col-12 col-md-4 text-left">
+            <h3>covering all the syllabus</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet accusantium itaque impedit, doloribus omnis molestias ad ratione, incidunt fuga enim nisi repudiandae quia cumque perferendis nihil, quam dolores officia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+       <div class="container-fluid  py-md-4">
+      <div class="container mx-auto px-md-3">
+        <div class="row mx-auto">
+            <div class="col-12 col-md-5   d-flex justify-content-end order-md-12 order-sm-1 order-md-12">
+            <img src="./images/homeGirl.png" alt="" class="img-fluid edu__images">
+          </div>
+          <div class="col-12 col-md-7 d-flex justify-content-end   px-md-5 order-md-1 order-1 order-sm-12 order-md-1">
+           <div class="m-0 m-md-5">
+             <h3>Your Performance</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet accusantium itaque impedit, doloribus omnis molestias ad ratione, incidunt fuga enim nisi repudiandae quia cumque perferendis nihil, quam dolores officia.</p>
+           </div> 
+          </div>
+         
+        </div>
+      </div>
+    </div>
+       <div class="container-fluid  bg-light py-md-4">
+      <div class="container mx-auto px-md-3">
+        <div class="row mx-auto">
+          <div class="col-12 col-md-7  d-flex justify-content-end ">
+            <img src="./images/boyHome.png" alt="" class="img-fluid edu__images edu__images__boy">
+          </div>
+          <div class="col-12 col-md-5 text-left">
+            <div class="lg-m-5 py-lg-5">
+               <h3>Video Conferencing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet accusantium itaque impedit, doloribus omnis molestias ad ratione, incidunt fuga enim nisi repudiandae quia cumque perferendis nihil, quam dolores officia.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet accusantium itaque impedit, doloribus omnis molestias ad ratione, incidunt fuga enim nisi repudiandae quia cumque perferendis nihil, quam dolores officia</p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- image card carousel -->
+<div class="container gldr">
+    <div class="glider-contain">
+      <div class="glider">
+        <div class="">
+         <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+  </div>
+
+        <div class="">
+                <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+        <div class="">
+                <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+        <div class="">
+                  <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+        <div class="">
+                  <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+        <div class="">
+                  <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+        <div class="card-image">
+               <div class="blogcard bg-light">
+    <div class="blogupper">
+      <div class="blogimg">
+      <img src="./images/homeone.png" alt="team member" />
+      </div>
+      <div class="blogtext">
+        <p class="color-green" style="color:'#608A24'">Iliyana Chikkan</p>
+        <p>Head of Agrofund</p>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque soluta autem tenetur 
+      laudantium sequi!</p>
+    </div>
+  </div>
+        </div>
+
+      </div>
+      <span role="button" aria-label="Previous" class="glider-prev">
+           <span class="material-icons">
+keyboard_arrow_left
+</span>
+      </span>
+      <span role="button" aria-label="Next" class="glider-next">
+   <span class="material-icons">
+keyboard_arrow_right
+</span>
+</svg>
+      </span>
+      <span role="tablist" class="dots"></span>
+    </div>
+  </div>       
+    <!-- text carousel -->
+    <div class="container mt-3">
+      <div class="container bg__green__card text-white py-5">
+    <div class="text-center">
+    <h2>How Our Foundation helps you </h2>
+    <p class="p__text__carousel mt-lg-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi, atque error eaque temporibus dolore sapiente, seusdam, nihil necessitatibus doloremque tenetur beatae.</p>
+    </div>
+    <div class="container button__container">
+  <div class="buttons__text__carousel">
+    <button class="bts" id="a" onclick ="submit('a')">1</button>
+    <button  class="bts" id="b" onclick ="submit('b')">2</button>
+    <button class="bts" id="c" onclick ="submit('c')">3</button>
+      <button class="bts" id="d" onclick ="submit('d')">4</button>
+  </div>
+  <div>
+   <div class="container-flex mt-3">
+    <div class="row text__bt">
+    <div class="col-8 col-md-5 ml-md-4">
+    <h5 class="lead text__carousel__p" id="j">Select your membership plans andd your favourite hobby</h5>
+    </div>
+    <div class="col-8 col-md-3 ml-md-4 text__carousel__p">
+  <p class="lead  text__carousel__p" id="k">loremasdjkalkdjoeiu<br/>rweoralskfweorifdlkadl <br/> kajoeriuwoeradlkj alkkjdthat is whi</p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid ftr mt-5">
+ 
+     <div class="container my-lg-5 py-lg-5 mt-md-5 my-sm-5 py-sm-5 mt-sm-5">
+      <div class="container mx-md-4 my-md-3 text-center bg-white border py-5 my-lg-5 py-sm-5 transform__bottom__home">
+        <h3>The future of <span class="color-success">Transforming Your Carrier</span> is Weew</h3>
+        <button class="green__button__large mt-3 member__button">Become a member</button>
+      </div></div>
+      <footer class="px-md-5 mx-md-4 my-lg-5 py-3">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-3 px-3">
+      <h4>WeeW</h4>
+     <p class="muted">About us</p>
+     <p class="muted">News</p>
+     <p class="muted">DIY Portal</p>
+      <p class="muted">Services</p>
+      <p class="muted">FAQ's</p></div>
+        <div class="col-6 col-md-3 py-3">
+        <h4>LEGAL</h4>
+    <p class="muted">Privacy</p>
+      <p class="muted">Terms</p>
+      <p class="muted">Security</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end text-center">
+        <div>
+        <div class="card d-none d-md-block" style="width: '18rem' , backgroundColor:'#608A24', color:'white' ">
+            <div class="card-body">
+              <div class="card-title">Blog WeeW</div>
+              <div class="card-text">
+               write email to us <br/>info@WeeW.com
+              </div>
+                 <div class="card-text">
+                  <button class="signin__button"><img src="./images/signinbutton.png" alt="sign in button" class="mx-lg-2 signinimage"/>Sign in</button>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </div></div>
+      <div class="row text-left text-sm-center">
+      <div class="col-md-3">
+        <img 
+        src='./images/logo.png'
+        class="img-fluid"
+        alt="logo"/>
+      </div>
+      <div class="col-md-5">
+      <h4>contact Us</h4>
+      <p class="lead">Weew Foundation <br/>"Shree Ardhan view Enclave",<br/>G03 SAVE 15/3 KS Garden </p>
+      </div>
+      <div class="col-md-4 text-left">
+        <p class="lead">© Copyright 2020 , WeeW pvt ltd</p>
+      </div></div>
+      </footer>
+<!--modal here-->
+
+<div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+    
+    <div class="modal-body">
+  <div class="container-fluid imi" >
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="mt-5 py-5 text-center">
+              Weew Logo
+              <h3>Welcome </h3>
+              <p>Enter your email to get started</p>
+        <div class="form my-4 pt-1 d-flex flex-column justify-content-center align-items-center">
+            <label for="email">Email</label>
+            <input type="email" placeholder="student@example.com"  class="input__curved__modal"/>
+           <button class="mt-2 green__button__modal" id="btnnext">Lets go</button>
+        </div>
+      </div></div>
+      <div class="col-md-6 d-none d-md-block">
+        <img src="./images/modal.png" alt="" class="img-fluid">
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+</div></div>
+
+<div class="modal fade" id="modaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+    
+    <div class="modal-body">
+  <div class="container-fluid imi">
+    <div class="row">
+         <div class="col-md-6 d-none d-md-block">
+        <img src="./images/modal.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="form my-4 pt-5 mt-md-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="form-group ">
+               <label for="email">email</label><br>
+            <input type="email" placeholder="student@example.com" class="input__curved__modal" />
+            </div>
+            <div class="form-group">
+               <label for="email">Phone No</label><br>
+            <input type="email" placeholder="+917883428578" class="input__curved__modal" />
+            </div>
+             <div class="form-group">
+               <label for="email">Enter OTP</label><br>
+            <input type="email" placeholder="123456" class="input__curved__modal" />
+            </div>
+           
+           <button class="green__button__modal" id="btnsubmit" >Submit</button>
+        </div>
+      </div>
+   
+    </div>
+   
+  </div>
+</div></div>
+</div></div>
+<div class="modal fade" id="modalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+  <div class="container-fluid imi">
+    <div class=" p-5 m-4 text-center">
+         <div class="">
+        <img src="./images/logo.png" alt="" class="img-fluid">
+        <h3>Thankyou For Registering</h3>
+        <button class="green__button__modal">Go To Blog</button>
+      </div>
+   
+    </div>
+   
+  </div>
+</div></div>
+</div></div>
+    </div>
+</main>
+
+
+
+<!-- jquery for slick -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('#btnsignup').click(function(){
+        $('#modalone').modal()
+      });
+      $('#btnnext').click(function(){
+      $('#modalone').modal("hide");
+        $('#modaltwo').modal();
+      })
+      $('#btnsubmit').click(function(){
+        $('#modaltwo').modal("hide");
+        $('#modalthree').modal()
+      })
+    });
+
+
+  $(document).on('click', '.bts',function(){
+    $(this).addClass('cls').siblings().removeClass('cls');
+  })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script>
+  // Glider Config
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: ".dots",
+    arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next"
+  },
+  responsive: [
+    {
+      // More than 768px
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        }
+      }
+    },
+    {
+      // More than 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 1,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        }
+      }
+    }
+  ]
+});
+
+</script>
+<script>
+          const list = [{first:'hello there how are you',second:'fine thankyou we will meet soon'},{first:'awesome man lets roll',second:'ok bro so we will'}]
+         submit= (value)=>{
+          let btn = document.getElementById(value);
+            switch (value){               
+              case 'a':
+                document.getElementById('j').innerHTML=list[0].first;
+                document.getElementById('k').innerHTML=list[0].second;
+              break;
+              case 'b':
+                document.getElementById('j').innerHTML=list[1].first;
+                document.getElementById('k').innerHTML=list[1].second;
+              break;
+              default:
+}
+          }
+  
+        </script>
+
+
+
+
+
+
+
+	
+	 <!-- Vendor JS Files -->
+	
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- slick javascrpit file -->
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>

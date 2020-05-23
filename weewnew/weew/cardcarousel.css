@@ -1,0 +1,102 @@
+.gldr {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 90%;
+}
+
+.main .container .glider-contain .glider .card-image {
+/*  margin-right: 0.5rem;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;*/
+}
+.main .container .glider-contain .glider .card-image img {
+ /* display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;*/
+}
+.main .container .glider-contain .glider-prev,
+.main .container .glider-contain .glider-next {
+  font-size: 1.5rem;
+  background: #454545;
+  color: #ffffff;
+  margin-top: 1rem;
+     width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.main .container .glider-contain .glider-prev .fas,
+.main .container .glider-contain .glider-next .fas {
+  margin-left: 1rem;
+}
+
+/*blog cards css here*/
+.blogcard{
+  height:100%;
+  width:300px;
+  background:#fff;
+  border:1px solid #d1c6d1;
+  border-radius:2px;
+  padding:20px;
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(209,198,209,1);
+-moz-box-shadow: -1px 3px 5px 0px rgba(209,198,209,1);
+box-shadow: -1px 3px 5px 0px rgba(209,198,209,1);
+}
+
+.blogupper{
+  display:flex;
+}
+.blogimg{
+  height:60px;
+  width:70px;
+  padding-left:5px;
+  border-radius:50%;
+  padding:10px;
+  margin-left:5px;
+  margin-top:5px;
+}
+.blogimg>img{
+  padding:10px;
+    height:60px;
+  width:60px;
+    border-radius:50%;
+}
+.blogtext{
+ margin-left:8px;
+ text-align:center;
+}
+.blogtext>p{
+line-height: 10px;
+  margin-top:20%;
+}
+.lower{
+  width:240px;
+  margin:0 auto;
+  text-align: left;
+
+}
+/*end of blog cards css here */
+
+@media only screen and (max-width: 768px) {
+  .main .glider-contain .glider-prev,
+  .main .glider-contain .glider-next {
+/*    display: none;*/
+  }
+}
+@media only screen and (min-width: 769px) {
+  .main .glider-contain .dots {
+    display: none;
+  }
+}

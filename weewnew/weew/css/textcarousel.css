@@ -1,0 +1,136 @@
+.buttons__text__carousel{
+  width:auto;
+  display:flex;
+  margin:0 auto;
+}
+.buttons__text__carousel button{
+  height:50px;
+  width:50px;
+  margin-left:15%;
+  border-radius:50%;
+  background:#709639;
+  border:1px solid white;
+  color:white;
+  transition:all 0.3s ease-in;
+padding:10px;
+}
+.cls{
+  background:white;
+  border:1px solid #709639;
+}
+.buttons__text__carousel button.active{
+  background:white;
+  color:green;
+  outline:none;
+  border:0.5px solid green;
+}
+.buttons__text__carousel button{
+  outline:none;
+}
+.bt{
+/*margin-left:10%;*/
+  margin-top:10%;
+  width:100%;
+}
+.buttons__text__carousel{
+  margin-left:10%;
+  z-index:9 !important;
+}
+.buttons__text__carousel button::before{
+  content:'';
+  height:1px;
+  width:20%;
+  z-index:-1;
+  margin-top:8px;
+  position:absolute;
+  background:#fff;
+}
+
+button:last-child::before{
+  display:none;
+}
+.textcontainers{
+  display:flex;
+}
+.textcontainers div{
+  width:30%;
+  height:auto;
+  margin:0 auto;
+  text-align: center;
+}
+.buttons__text__carousel button{
+  outline:none;
+  cursor:pointer;
+}
+/*.bg-green{
+  position:relative;
+  background:green;
+  z-index:5;
+  margin:10px 0;
+}*/
+.bg__green__card{
+  background:url('../images/textCarousel.png');
+  background-position: center;
+  background-size: cover;
+ position:relative;
+  z-index:5;
+  margin:10px 0;
+}
+.p__text__carousel{
+  width:400px;
+  margin:0 auto;
+}
+.button__container{
+  margin-top:40px;
+}
+.text__bt{
+  margin-left:20%;
+}
+@media screen and (max-width: 600px){
+  .p__text__carousel{
+    width:370px;
+    margin-left:-10px;
+  }
+}
+@media screen and (max-width: 400px){
+  .p__text__carousel{
+    width:310px;
+  }
+}
+@media (max-width: 330px){
+  .p__text__carousel{
+    width:270px;
+    text-align: center;
+  }
+  .bt{margin-left:-15%;}
+}
+
+@media (max-width: 580px){
+  .buttons__text__carousel button::before{
+    width:18%;
+  }
+  .buttons__text__carousel{
+  margin-left:-5%;
+  }
+}
+@media (max-width: 780px) and (min-width: 360px){
+  .bt{margin-left:-10px;
+}
+ .text__bt{
+    margin-left:10%;
+  }}
+@media screen and (min-width: 1300px){
+  .bt{
+    margin-left:0;
+  }
+}
+#owl-demo .item{
+  background: #42bdc2;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}

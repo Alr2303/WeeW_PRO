@@ -1,0 +1,377 @@
+ .carousel-indicators li{
+ 	height:10px;
+ 	width:10px;
+ 	border-radius:50%;
+ 	border:1px solid white;
+
+ }
+.top__text{
+position:absolute;
+top:30%;
+left:10%;
+width:50vw;
+color:white;	
+}
+.top__text p{
+
+	text-align: justify;
+	}
+.top__text h3{
+	line-height:40px;
+	font-size:2rem;
+}
+/*styles for text over image*/
+
+.input__responsive__group{
+	width:45vw;
+	display:flex;
+	flex-direction: row;
+	margin-top:25px;
+}
+.input__responsive__input{
+	border-radius:30px;
+	border:none;
+	opacity:0.7;
+	background:grey;
+	width:60%;
+	height:48px;
+	color:white;
+	outline:none;
+}
+
+input::placeholder{
+	color:white;
+}
+.input__responsive__btn{
+	margin-left:-60px;
+	border-radius:30px;
+	padding:10px;
+	background:white;
+	color:#608A24;
+	position:relative;
+	border:none;
+	height: 48px;
+    width: 182px;
+}
+.green__button{
+    height: 48px;
+    width: 182px;
+  border-radius:30px;
+  padding:10px;
+  background:#608A24;
+  color:white;
+  position:relative;
+  border:none;
+  text-align: center;
+
+}
+.home__responsive__textbox{
+	margin-top:-120px;
+	text-align:left;
+}
+
+ol.carousel-indicators li{
+	height:20px;
+	width:20px;
+	border-radius:50%;
+}
+.cards{
+  height:55px;
+  width:55px;}
+  .cc{
+    background:white;
+    color:green;
+  }
+
+.mid{
+  background:green;
+  color:white;
+}
+.video{
+  background-image:url('./images/video.png');
+  background-position: center;
+  background-size: cover;
+  height:300px;
+}
+.uni{
+      background-image:url('./images/blog.png');
+  background-position: center;
+  background-size: cover;
+height:300px;
+
+  }
+  
+.video>.card,
+.uni>.card{
+  background:none;
+  text-align: left;
+  color:white;
+  padding:10px;
+  border:none;
+}
+
+.courses{
+  width:100vw;
+  margin:0 auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+.up{
+  border-bottom:4px solid white;
+  width:40%;
+}
+.ftr{
+  background:url(./images/footerbackground.png);
+  background-size: cover;
+  background-position: center;
+}
+.first{
+  background: url('./images/a.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.second{
+ background: url('./images/b.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.third{
+   background: url('./images/c.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.carousel-item{
+  height:inherit;
+  width:inherit;
+}
+
+.cards__for__faq{
+  height:335px;
+}
+.carousel-inner{
+  height:80vh;
+}
+/* media queries */
+/* min 768 and max 1023 px*/
+
+@media screen and (min-width: 760px) and (max-width:1300px){
+  .top__text{
+    top:11%;
+  }
+}
+/*for devices less than 765 i.e mobile phones */ 
+@media screen and (max-width: 765px){
+  .scroll__on__mobile{
+    display: flex;
+    height: 338px;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    margin-left:-110px;
+  }
+
+  .scroll__on__mobile__card{display:inline-block;}
+  .scroll__on__mobile::-webkit-scrollbar{display:none;}
+
+}
+
+/*android devices */
+@media (min-width: 350px)and(max-width:600px){
+  .scroll__on__mobile{
+    margin-left:-40px;
+  }
+  .ftr{
+    background:none;
+  }
+  .card{
+    width:260px;
+    height:inherit;
+  }
+  .scroll__on__mobile{
+    height:260px;
+  }
+  .carousel-inner{
+    height:92vh;
+  }
+  .top__text{
+    width:80vw;
+    top:30%;
+  }
+  .top__text>h1{font-size:2rem;}
+  .top__text p{
+    font-size:12px;
+    text-align: left;
+  }
+  .input__responsive__group{
+    width:100vw;
+    flex-direction: column;
+  }
+  .input__responsive__btn{
+    margin-left:0;
+    margin-top:10px;
+  }
+  .courses{
+    padding-left: 0;
+    margin-left:-20px;
+  }
+  .up{
+    width:45%;
+  }
+
+}
+@media(max-width: 330px){
+  .blogcard{
+    padding:2px;
+    width:216px;
+    height: auto;
+  }
+  .lower{
+    width:218px;
+  }
+  .glider-slide{
+        height: auto;
+    width: 226px;
+  }
+  .blogtext{
+    margin-left:-10px;
+  }
+  .p__text__carousel{
+    width:246px;
+  }
+}
+
+/*iphone se only */
+/*@media (max-width: 330px){
+  .card__for__home{
+    width:15rem;
+  }
+}*/
+/* min 1024 and max 1919 px*/
+/*from laptop screen upto desktop screen */
+
+/*@media screen and (min-width:1320)and(max-width: 1919px){
+.top__text{
+  top:15%;
+}
+}
+
+@media (max-width: 340px){
+  .input__responsive__group{
+    flex-direction:column;
+  }
+  .input__responsive__group{
+  width:70vw;
+}
+.input__responsive__input{
+  width:80%;
+  height:40px;
+}
+.input__responsive__btn{
+  margin-left:0;
+  width:65%;
+  font-size:15px;
+  margin-top:10px;
+  height:40px;
+}
+.home__responsive__textbox{
+  margin-top:-20%;
+  text-align:left;
+  margin-left:10px;
+}
+.home__responsive__textbox p{font-size:12px;}
+}
+
+
+@media (max-width:580px) and (min-width: 350px){
+  .input__responsive__group{
+    flex-direction:column;
+  }
+  .input__responsive__group{
+  width:70vw;
+}
+.input__responsive__input{
+  width:80%;
+  height:40px;
+}
+.input__responsive__btn{
+  margin-left:5%;
+  width:60%;
+  font-size:15px;
+  margin-top:10px;
+  height:40px;
+}
+.home__responsive__textbox{
+  margin-top:-20%;
+  text-align:left;
+  margin-left:10px;
+}
+.home__responsive__textbox p{font-size:12px;}
+}
+@media screen and (max-width: 600px){
+  .top__text{
+    top:23%;
+    width:90vw;
+    left:6%;
+  }
+  .up{
+    width:50vw;}
+    .top__text h1{
+      font-size:20px;
+      width:100vw;
+  }
+  .uni{
+    height:340px;
+  }
+  .top__text p{
+    font-size:12px;
+  }
+  .input__responsive__group{
+        text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+  }
+  .first{
+  background: url('./images/weew__home__mobile.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.second{
+ background: url('./images/b.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}
+.third{
+   background: url('./images/c.png');
+  background-position: center;
+  background-size:100% 100%;
+  height:100%;
+  width:inherit;
+}}*/
+@media (max-width: 900px){
+  .navbar{
+    z-index: 99;
+  }
+}
+
+.glider-prev,
+.glider-next{
+      border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  background:#608A24;
+  color:white;
+    }
